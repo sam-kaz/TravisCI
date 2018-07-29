@@ -16,7 +16,7 @@ git:
 
 addons:
   sonarcloud:
-    organization: "sam-kaz-github"
+    organization: "sam-kaz"
     token:
       secure: $SONAR_TOKEN
 
