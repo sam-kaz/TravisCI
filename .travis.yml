@@ -16,7 +16,7 @@ git:
 
 addons:
   sonarcloud:
-    organization: "travis-organisation"
+    organization: "test"
     token:
       secure: $SONAR_TOKEN
 
