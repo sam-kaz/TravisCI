@@ -23,6 +23,7 @@
 		<java.version>1.8</java.version>
 		<failOnNoGitDirectory>false</failOnNoGitDirectory>
 		<failOnUnableToExtractRepoInfo>false</failOnUnableToExtractRepoInfo>
+		<sonar.projectKey>myprefix:${project.groupId}:${project.artifactId}</sonar.projectKey>
 	</properties>
 
 	<dependencies>

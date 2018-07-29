@@ -18,7 +18,7 @@ addons:
   sonarcloud:
     organization: "sam-kaz-github"
     token:
-      secure: 845fd9820ec384b487bd30e5ed23ae40459a0083
+      secure: $SONAR_TOKEN
 
 script:
 - ./mvnw clean install -B
