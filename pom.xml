@@ -24,6 +24,7 @@
 		<failOnNoGitDirectory>false</failOnNoGitDirectory>
 		<failOnUnableToExtractRepoInfo>false</failOnUnableToExtractRepoInfo>
 		<sonar.projectKey>myprefix:${project.groupId}:${project.artifactId}</sonar.projectKey>
+		<argLine>-Xmx128m</argLine>
 	</properties>
 
 	<dependencies>
@@ -187,6 +188,13 @@
                     </execution>
                 </executions>
             </plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<runOrder>random</runOrder>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
